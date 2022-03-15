@@ -1,0 +1,180 @@
+Last login: Mon Aug 30 09:47:26 on console
+mumma@Ethans-MacBook-Air ~ % telnet
+zsh: command not found: telnet
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+zsh: command not found: telnet
+mumma@Ethans-MacBook-Air ~ % brew install telnet
+Updating Homebrew...
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+alembic                                  yt-dlp
+==> Updated Formulae
+Updated 39 formulae.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/telnet/manifests/63
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/telnet/blobs/sha256:e6fb7de53e7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Pouring telnet--63.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/telnet/63: 4 files, 174.7KB
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+
+Trying 134.68.220.47...
+Connected to mail-relay.iu.edu.
+Escape character is '^]'.
+220 Sendmail ESMTP - IU Campus Communications Team - Mail-Relay
+HELO
+501 5.0.0 HELO requires domain address
+HELO iu.edu
+250 mail-relay.iu.edu Hello [140.182.74.31], pleased to meet you
+MAIL FROM:<ebehar@iu.edu>
+250 2.1.0 <ebehar@iu.edu>... Sender ok
+RCPT TO:<ebehar@iu.edu>
+250 2.1.5 <ebehar@iu.edu>... Recipient ok
+DATA     
+354 Enter mail, end with "." on a line by itself
+Date August 30th 2021 
+From Ethan Behar
+To Ethan Behar
+.
+250 2.0.0 17UIl9bo010560 Message accepted for delivery
+QUIT
+221 2.0.0 mail-relay.iu.edu closing connection
+Connection closed by foreign host.
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+
+Trying 129.79.1.38...
+Connected to mail-relay.iu.edu.
+Escape character is '^]'.
+220 Sendmail ESMTP - IU Campus Communications Team - Mail-Relay
+HELO
+501 5.0.0 HELO requires domain address
+HELO iu.edu
+250 mail-relay.iu.edu Hello [140.182.74.31], pleased to meet you
+MAIL FROM:ebehar@iu.edu
+250 2.1.0 ebehar@iu.edu... Sender ok
+RCPT TO:ebehar@iu.edu
+250 2.1.5 ebehar@iu.edu... Recipient ok
+DATA
+354 Enter mail, end with "." on a line by itself
+Date: Mon, 30 Aug 2021
+From: Ethan Behar <ebehar@iu.edu>
+Subject: Test Subject
+To: ebehar@iu.edu
+
+Hi Ethan,
+Did this test work?
+/Ethan.
+.
+250 2.0.0 17UIw0ow008145 Message accepted for delivery
+QUIT
+221 2.0.0 mail-relay.iu.edu closing connection
+Connection closed by foreign host.
+mumma@Ethans-MacBook-Air ~ % clear
+
+
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+
+Trying 129.79.1.38...
+Connected to mail-relay.iu.edu.
+Escape character is '^]'.
+220 Sendmail ESMTP - IU Campus Communications Team - Mail-Relay
+HELO iu.edu
+250 mail-relay.iu.edu Hello [140.182.74.31], pleased to meet you
+MAIL FROM:ebehar@iu.edu
+250 2.1.0 ebehar@iu.edu... Sender ok
+RCPT TO:sice-networks-l@list.indiana.edu
+250 2.1.5 sice-networks-l@list.indiana.edu... Recipient ok
+DATA
+354 Enter mail, end with "." on a line by itself
+Date: Mon, 30 Aug 2021 03:03:00
+From: Ethan Behar <ebehar@iu.edu>
+Subject: Ethan Behar
+RSET
+QUIT
+]
+^]
+telnet>     
+QUIT
+
+                    
+quit        
+telnet
+brew
+git
+^]
+telnet> ^]^]^]^]
+?Invalid command
+telnet> ^]
+?Invalid command
+telnet> quit
+Connection closed.
+mumma@Ethans-MacBook-Air ~ % clear
+
+
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+
+Trying 129.79.1.38...
+Connected to mail-relay.iu.edu.
+Escape character is '^]'.
+220 Sendmail ESMTP - IU Campus Communications Team - Mail-Relay
+HELO iu.edu
+250 mail-relay.iu.edu Hello [140.182.74.31], pleased to meet you
+MAIL FROM:ebehar@iu.edu
+250 2.1.0 ebehar@iu.edu... Sender ok
+RCPT TO:ebehar.iu.edu
+550 5.1.1 ebehar.iu.edu... User unknown
+RCPT TO:sice-networks-l@list.indiana.edu
+250 2.1.5 sice-networks-l@list.indiana.edu... Recipient ok
+DATA
+354 Enter mail, end with "." on a line by itself
+Date: Mon, 30 Aug 2021 03:08:00
+From: Ethan Behar <ebehar@iu.edu>
+Subject: Ethan Behar Assignment 01 SMTP
+To:sice-networks-l@list.indiana.edu
+
+Hello Professor Swany, Dominik, and Jeremy
+Have a fun time grading. =D
+Sincerely,
+Ethan Behar
+.
+250 2.0.0 17UJ70QT009149 Message accepted for delivery
+QUIT
+221 2.0.0 mail-relay.iu.edu closing connection
+Connection closed by foreign host.
+mumma@Ethans-MacBook-Air ~ % telnet mail-relay.iu.edu 25
+
+Trying 129.79.1.38...
+Connected to mail-relay.iu.edu.
+Escape character is '^]'.
+220 Sendmail ESMTP - IU Campus Communications Team - Mail-Relay
+HELO iu.edu         
+250 mail-relay.iu.edu Hello [140.182.74.31], pleased to meet you
+MAIL FROM:ebehar@iu.edu
+250 2.1.0 ebehar@iu.edu... Sender ok
+RCPT TO:ebehar@iu.edu
+250 2.1.5 ebehar@iu.edu... Recipient ok
+RCPT TO:sice-networks-l@list.indiana.edu
+250 2.1.5 sice-networks-l@list.indiana.edu... Recipient ok
+DATA
+354 Enter mail, end with "." on a line by itself
+Date: Mon, 30 Aug 2021 03:14:00
+From: Ethan Behar <ebehar@iu.edu>
+Subject: Ethan Behar Assignment 01 SMTP Part 2
+To: sice-networks-l@list.indiana.edu
+
+Hello Professor Swany, Dominik, and Jeremy
+Sorry for a second e-mail. I wanted to receive this e-mail as well. But mistyped my e-mail the first time around.
+      
+Sincerely,
+Ethan Behar
+.
+250 2.0.0 17UJD9vs009919 Message accepted for delivery
+QUIT
+221 2.0.0 mail-relay.iu.edu closing connection
+Connection closed by foreign host.
+mumma@Ethans-MacBook-Air ~ % 
